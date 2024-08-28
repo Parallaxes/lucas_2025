@@ -6,7 +6,7 @@ hide: true
 ---
 
 My journey starts here.
-### LUCAS MY NAME IS LUCAS MASTERSON LUCAS I AM LUCAS MY NAME IS LUCAS HELP ME PLEASE GOD MY NAME IS LUCAS I KNOW IT IS
+### LUCAS
 
 ### Markdown Samples [markdown cheatsheet](https://www.markdownguide.org/getting-started/)
 > Using markdown from Index.md. We are learning markdown.
