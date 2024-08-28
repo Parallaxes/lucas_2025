@@ -23,6 +23,7 @@ My journey starts here.
 ```
 
 - Sample of bullets
+
 ```markdown
 - Introduction to concepts and requirements by the teacher
 - Project-based learning with teacher support, performing Agile/Scrum development
@@ -34,4 +35,5 @@ My journey starts here.
 ```
 
 Cat!
+
 ![cat](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
