@@ -6,129 +6,183 @@ permalink: /about/
 
 
 <style>
-    /* Style looks pretty compact, trace grid-container and grid-item in the code */
-    .grid-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Dynamic columns */
-        gap: 10px;
+    /* Container for Flexbox-based layout */
+    .flex-container {
+        display: flex;
+        justify-content: center; /* Center items horizontally */
+        flex-wrap: wrap; /* Allow wrapping of items */
+        gap: 25px; /* Add space between items */
+        margin-top: 20px;
     }
-    .grid-item {
+    .flex-item {
         text-align: center;
+        flex-basis: calc(25% - 20px); /* Make items take up 25% of the container width */
     }
-    .grid-item img {
+    .flex-item img {
         width: 100%;
         height: 150px; /* Fixed height for uniformity */
         object-fit: contain; /* Ensure the image fits within the fixed height */
     }
-    .grid-item p {
+    .flex-item p {
         margin: 5px 0; /* Add some margin for spacing */
+    }
+    /* Flexbox container for projects section */
+    .projects-container {
+        display: flex;
+        flex-direction: column; /* Align items vertically */
+        width: 100%; /* Ensure the projects section spans the full width */
+        align-items: center; /* Center-align the project items */
+        margin-top: 20px;
+    }
+    .project-item {
+        width: 100%; /* Ensure project item spans the full width */
+        max-width: 875px; /* Set a max width to avoid items being too wide */
+        margin-bottom: 20px; /* Add some space between projects */
+        padding: 15px;
+        background-color: #333; /* Optional: Add a background color for clarity */
+        border-radius: 8px;
+        text-align: left; /* Align text to the left */
+        color: #fff; /* Set text color */
+    }
+    .project-item {
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        padding: 20px;
+        margin: 10px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .project-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+    .project-item h3 {
+        margin-top: 0;
+        text-align: left;
+    }
+    .projects-container h2 {
+        text-align: left;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #f1f1f1;
+        border-top: 1px solid #24292e;
+        margin-top: 20px;
+        width: 100%;
+        background-color: #121212;
+    }
+
+    .footer a {
+        margin: 0 10px;
+        text-decoration: none;
+        background-color: #121212;
+    }
+
+    .footer img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        transition: transform 0.3s ease;
+    }
+
+    .footer img:hover {
+        transform: scale(1.1);
     }
 </style>
 
-<!-- This grid_container class is for the CSS styling, the id is for JavaScript connection -->
 <div class="bio-container" id="bio_container">
     <!-- bio content will be added here by JavaScript -->
 </div>
 
-<div class="grid-container" id="grid_container">
+<div class="flex-container" id="flex_container">
     <!-- content will be added here by JavaScript -->
 </div>
 
-
-
 <script>
-    // 1. Make a connection to the HTML container defined in the HTML div
-    var container = document.getElementById("grid_container"); // This container connects to the HTML div
-    var bioContainer = document.getElementById("bio_container"); // This container connects to the bio div
+    var container = document.getElementById("flex_container");
+    var bioContainer = document.getElementById("bio_container");
 
-    // 2. Define a JavaScript object for our data rows for the Living in the World grid
     var living_in_the_world = [
         {"flag": "https://raw.githubusercontent.com/isocpp/logos/master/cpp_logo.png", "greeting": "Programming Language", "description": "C++ - 4 years"},
         {"flag": "https://www.competitionsciences.org/wp-content/uploads/2017/04/CYBERPATRIOT_Defense-Competition_Blue.png", "greeting": "Cybersecurity Competition", "description": "CyberPatriot - 2 years"},
         {"flag": "https://cdn.worldvectorlogo.com/logos/kali-1.svg", "greeting": "Linux Distro", "description": "Kali Linux - 3 years"},
         {"flag": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Seal_of_the_United_States_Intelligence_Community.svg", "greeting": "Open Source Intelligence", "description": "OSINT Enthusiast - 4 years"},
-        {"flag": "https://www.freewear.org/images/articles/detail/FW0688_Dise%C3%B1o.png", "greeting": "Read The Friendly Manual!", "description": "RTFM! - 4 years"}
+        // {"flag": "https://www.freewear.org/images/articles/detail/FW0688_Dise%C3%B1o.png", "greeting": "Read The Friendly Manual!", "description": "RTFM! - 4 years"}
     ];
 
-    // 3. Define a JavaScript object for the bio section
     var bio_data = {
         "bio": "Hello! I'm Lucas, a freshman attending DNHS. You'll typically find me in cybersecurity (CyberPatriot) or CTF competitions, but in my free time I enjoy building personal projects with C++ and reverse engineering programs. I'm passionate about open source software and intelligence, and in that spirit, do all of my development through Linux.",
     };
 
-    // List of projects
     var projects = [
-        { name: 'CSSE Student Repo', url: 'https://github.com/Parallaxes/lucas_2025', description: 'The repo containing my code for the Computer Science & Software Engineering course 2024 - 2025.' },
-        { name: 'XALLARAP', url: 'https://github.com/Parallaxes/XALLARAP', description: 'A hardening script for Linux distros, created for the CyberPatriot competition.' },
+        { name: 'XALLARAP', url: 'https://github.com/Parallaxes/XALLARAP', description: 'A hardening script for Linux distros, created for the CyberPatriot competition. Current functioning features include hash checking, user auditing, password auditing, logging, and kernel hardening.', image: 'https://raw.githubusercontent.com/Parallaxes/lucas_2025/main/images/xallarapDemo.png'},
+        { name: 'SPOJ Solutions', url: 'https://github.com/Parallaxes/SPOJ', description: 'A general collection of my Sphere Online Judge (SPOJ) solutions. WIP', image: 'https://miro.medium.com/v2/resize:fit:1400/0*XvhNyVt7B79rr81x.png'},
+        { name: 'CSSE Student Repo', url: 'https://github.com/Parallaxes/lucas_2025', description: 'Repository containing my student code portfolio for the Computer Science & Software Engineering course 2024 - 2025.', image: 'https://avatars.githubusercontent.com/u/66652504?s=200&v=4' },
+        
     ];
 
-    // 4. Function to create grid items
-    function createGridItem(location) {
-        // Create a div for the grid item
-        var gridItem = document.createElement("div");
-        gridItem.className = "grid-item";
+    function createFlexItem(location) {
+        var flexItem = document.createElement("div");
+        flexItem.className = "flex-item";
 
-        // Add "img" HTML tag for the flag
         var img = document.createElement("img");
-        img.src = location.flag; // extract the flag URL
+        img.src = location.flag;
 
-        // Add "p" HTML tag for the description
         var description = document.createElement("p");
-        description.textContent = location.description; // extract the description
+        description.textContent = location.description;
 
-        // Add "p" HTML tag for the greeting
         var greeting = document.createElement("p");
-        greeting.textContent = location.greeting;  // extract the greeting
+        greeting.textContent = location.greeting;
 
-        // Append img and p HTML tags to the grid item DIV
-        gridItem.appendChild(img);
-        gridItem.appendChild(description);
-        gridItem.appendChild(greeting);
+        flexItem.appendChild(img);
+        flexItem.appendChild(description);
+        flexItem.appendChild(greeting);
 
-        return gridItem;
+        return flexItem;
     }
 
-    function createProjectItem(project) {
-        var projectItem = document.createElement('div');
-        projectItem.style.width = "80%";
-        projectItem.style.border = "1px solid #ccc";
-        projectItem.style.margin = "10px auto";
-        projectItem.style.padding = "10px";
-        projectItem.style.position = "relative";
-        projectItem.innerHTML = `<h2>${project.title}</h2><p>${project.description}</p>`;
-        return projectItem;
-    }
-
-    // Assuming bio_data, living_in_the_world, container, and bioContainer are defined and accessible
-
-    // Create bio item and append to bioContainer
     var bioItem = document.createElement('div');
-    bioItem.style.width = "100%"; // Ensure bio section has the same width
-    bioItem.style.margin = "0 auto"; // Center align with auto margins
+    bioItem.style.width = "100%";
+    bioItem.style.margin = "0 auto";
     bioItem.innerHTML = `<p>${bio_data.bio}</p>`;
     bioContainer.appendChild(bioItem);
 
-    // Build grid items inside of our container for each row of data
     for (const location of living_in_the_world) {
-        var gridItem = createGridItem(location);
-        container.appendChild(gridItem);
+        var flexItem = createFlexItem(location);
+        container.appendChild(flexItem);
     }
 
-    // Add implemenetation for projects. Make sure they can extend to the full width of the screen.
-    var projectContainer = document.createElement('div');
-    projectContainer.style.width = "75%";
-    projectContainer.style.margin = "0 auto";
-
-    // Create and append Projects header
-    var projectsHeader = document.createElement('h2');
-    projectsHeader.innerText = "Projects";
-    projectsHeader.style.width = "75%"; // Ensure header has the same width
-    projectsHeader.style.margin = "20px auto 10px"; // Center align with auto margins and add some spacing
-    projectContainer.appendChild(projectsHeader);
+    var projectsContainer = document.createElement('div');
+    projectsContainer.className = "projects-container";
+    projectsContainer.innerHTML = "<h2>Projects</h2>";
 
     for (const project of projects) {
-        var projectItem = createProjectItem(project);
-        projectContainer.appendChild(projectItem);
+        var projectItem = document.createElement('div');
+        projectItem.className = "project-item";
+        projectItem.innerHTML = `
+            <a href="${project.url}" target="_blank" style="text-decoration: none; color: inherit;">
+                <h3>${project.name}</h3>
+                <p>${project.description}</p>
+                <img src="${project.image}" alt="${project.name}" style="width:50%; height:auto; border-radius:8px;">
+            </a>
+        `;
+        projectsContainer.appendChild(projectItem);
     }
 
-    document.body.appendChild(projectContainer);
+    container.appendChild(projectsContainer);
+
+    // Create footer section
+    var footer = document.createElement('div');
+    footer.className = "footer";
+    footer.innerHTML = `
+        <a href="https://github.com/Parallaxes" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+        </a>
+    `;
+
+    container.appendChild(footer);
 </script>
