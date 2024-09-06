@@ -92,6 +92,19 @@ permalink: /about/
     .footer img:hover {
         transform: scale(1.1);
     }
+
+    .image-gallery {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 10px;
+        }
+
+    .image-gallery img {
+        max-height: 200px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
 </style>
 
 <div class="bio-container" id="bio_container">
@@ -119,9 +132,24 @@ permalink: /about/
     };
 
     var projects = [
-        { name: 'XALLARAP', url: 'https://github.com/Parallaxes/XALLARAP', description: 'A hardening script for Linux distros, created for the CyberPatriot competition. Current functioning features include hash checking, user auditing, password auditing, logging, and kernel hardening.', image: 'https://raw.githubusercontent.com/Parallaxes/lucas_2025/main/images/xallarapDemo.png'},
-        { name: 'SPOJ Solutions', url: 'https://github.com/Parallaxes/SPOJ', description: 'A general collection of my Sphere Online Judge (SPOJ) solutions. WIP', image: 'https://miro.medium.com/v2/resize:fit:1400/0*XvhNyVt7B79rr81x.png'},
-        { name: 'CSSE Student Repo', url: 'https://github.com/Parallaxes/lucas_2025', description: 'Repository containing my student code portfolio for the Computer Science & Software Engineering course 2024 - 2025.', image: 'https://avatars.githubusercontent.com/u/66652504?s=200&v=4' },
+        {
+            name: 'XALLARAP',
+            url: 'https://github.com/Parallaxes/XALLARAP',
+            description: 'A hardening script for Linux distros, created for the CyberPatriot competition. Current functioning features include hash checking, user auditing, password auditing, logging, and kernel hardening.',
+            images: ['https://raw.githubusercontent.com/Parallaxes/lucas_2025/main/images/xallarapDemo.png', 'https://raw.githubusercontent.com/Parallaxes/lucas_2025/main/images/xallarapTitle.png']
+        },
+        {
+            name: 'SPOJ Solutions',
+            url: 'https://github.com/Parallaxes/SPOJ',
+            description: 'A general collection of my Sphere Online Judge (SPOJ) solutions. WIP',
+            images: ['https://miro.medium.com/v2/resize:fit:1400/0*XvhNyVt7B79rr81x.png']
+        },
+        {
+            name: 'CSSE Student Repo',
+            url: 'https://github.com/Parallaxes/lucas_2025',
+            description: 'Repository containing my student code portfolio for the Computer Science & Software Engineering course 2024 - 2025.',
+            images: ['https://avatars.githubusercontent.com/u/66652504?s=200&v=4']
+        },
         
     ];
 
@@ -167,7 +195,9 @@ permalink: /about/
             <a href="${project.url}" target="_blank" style="text-decoration: none; color: inherit;">
                 <h3>${project.name}</h3>
                 <p>${project.description}</p>
-                <img src="${project.image}" alt="${project.name}" style="width:50%; height:auto; border-radius:8px;">
+                <div class="image-gallery">
+                    ${project.images.map(image => `<img src="${image}" alt="${project.name}" class="gallery-image">`).join('')}
+                </div>
             </a>
         `;
         projectsContainer.appendChild(projectItem);
