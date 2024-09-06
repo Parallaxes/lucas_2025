@@ -136,13 +136,13 @@ permalink: /about/
             name: 'XALLARAP',
             url: 'https://github.com/Parallaxes/XALLARAP',
             description: 'A hardening script for Linux distros, created for the CyberPatriot competition. Current functioning features include hash checking, user auditing, password auditing, logging, and kernel hardening.',
-            images: ['https://raw.githubusercontent.com/Parallaxes/lucas_2025/main/images/xallarapDemo.png', 'https://raw.githubusercontent.com/Parallaxes/lucas_2025/main/images/xallarapTitle.png']
+            images: ['{{site.baseurl}}/images/about/xallarapTitle.png', ]
         },
         {
             name: 'SPOJ Solutions',
             url: 'https://github.com/Parallaxes/SPOJ',
             description: 'A general collection of my Sphere Online Judge (SPOJ) solutions. WIP',
-            images: ['https://miro.medium.com/v2/resize:fit:1400/0*XvhNyVt7B79rr81x.png']
+            images: ['{{site.baseurl}}/images/about/SPOJ.png']
         },
         {
             name: 'CSSE Student Repo',
