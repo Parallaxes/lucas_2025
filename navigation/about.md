@@ -101,7 +101,7 @@ permalink: /about/
         }
 
     .image-gallery img {
-        max-height: 200px;
+        max-height: 250px;
         object-fit: cover;
         border-radius: 5px;
     }
@@ -109,6 +109,10 @@ permalink: /about/
 
 <div class="bio-container" id="bio_container">
     <!-- bio content will be added here by JavaScript -->
+</div>
+
+<div class="achievements-container" id="achievements_container">
+    <!-- Achievements content will be added here by JavaScript -->
 </div>
 
 <div class="flex-container" id="flex_container">
@@ -136,13 +140,13 @@ permalink: /about/
             name: 'XALLARAP',
             url: 'https://github.com/Parallaxes/XALLARAP',
             description: 'A hardening script for Linux distros, created for the CyberPatriot competition. Current functioning features include hash checking, user auditing, password auditing, logging, and kernel hardening.',
-            images: ['{{site.baseurl}}/images/about/xallarapTitle.png', ]
+            images: ['{{site.baseurl}}/images/about/xallarapTitle.png', '{{site.baseurl}}/images/about/xallarapUsers.png', '{{site.baseurl}}/images/about/xallarapHash.png']
         },
         {
             name: 'SPOJ Solutions',
             url: 'https://github.com/Parallaxes/SPOJ',
             description: 'A general collection of my Sphere Online Judge (SPOJ) solutions. WIP',
-            images: ['{{site.baseurl}}/images/about/SPOJ.png']
+            images: ['https://miro.medium.com/v2/resize:fit:1400/0*XvhNyVt7B79rr81x.png', '{{site.baseurl}}/images/about/spojDemo1.png', '{{site.baseurl}}/images/about/spojDemo2.png']
         },
         {
             name: 'CSSE Student Repo',
@@ -184,6 +188,23 @@ permalink: /about/
         container.appendChild(flexItem);
     }
 
+    var achievementsContainer = document.getElementById("achievements_container");
+
+    // Create markdown content container for achievements
+    var markdownContent = document.createElement('div');
+    markdownContent.style.width = "100%"; // Ensure markdown content has the same width
+    markdownContent.style.margin = "0px auto"; // Center align with auto margins and add some spacing
+    markdownContent.innerHTML = `
+        <h2>My Achievements</h2>
+        <ul>
+            <li>4th place @ CyberPatriot XVI Semifinals</li>
+            <li>3rd place @ CyberPatriot XVI State Round</li>
+        </ul>
+    `;
+
+    // Append markdown content to the achievements container
+    achievementsContainer.appendChild(markdownContent);
+    
     var projectsContainer = document.createElement('div');
     projectsContainer.className = "projects-container";
     projectsContainer.innerHTML = "<h2>Projects</h2>";
