@@ -4,8 +4,10 @@ title: About Me
 permalink: /about/
 ---
 
-
 <style>
+    body {
+        font-family: "Arial", sans-serif; /* Change font to Arial or any other preferred font */
+    }
     /* Container for Flexbox-based layout */
     .flex-container {
         display: flex;
@@ -25,6 +27,13 @@ permalink: /about/
     }
     .flex-item p {
         margin: 5px 0; /* Add some margin for spacing */
+    }
+
+    .achievements-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
     }
     /* Flexbox container for projects section */
     .projects-container {
@@ -122,6 +131,7 @@ permalink: /about/
 <script>
     var container = document.getElementById("flex_container");
     var bioContainer = document.getElementById("bio_container");
+    var achievementsContainer = document.getElementById("achievements_container");
 
     var living_in_the_world = [
         {"flag": "https://raw.githubusercontent.com/isocpp/logos/master/cpp_logo.png", "greeting": "Programming Language", "description": "C++ - 4 years"},
@@ -183,14 +193,13 @@ permalink: /about/
     bioItem.innerHTML = `<p>${bio_data.bio}</p>`;
     bioContainer.appendChild(bioItem);
 
+    // First, append the images from living_in_the_world
     for (const location of living_in_the_world) {
         var flexItem = createFlexItem(location);
         container.appendChild(flexItem);
     }
 
-    var achievementsContainer = document.getElementById("achievements_container");
-
-    // Create markdown content container for achievements
+    // Then, create and append the achievements section
     var markdownContent = document.createElement('div');
     markdownContent.style.width = "100%"; // Ensure markdown content has the same width
     markdownContent.style.margin = "0px auto"; // Center align with auto margins and add some spacing
@@ -199,12 +208,16 @@ permalink: /about/
         <ul>
             <li>4th place @ CyberPatriot XVI Semifinals</li>
             <li>3rd place @ CyberPatriot XVI State Round</li>
+            <li>1st place MS Team @ SoCal Cyber Cup Final Round (3rd plaec overall competing against colleges)</li>
+            <li>1st place MS Team @ SoCal Cyber Cup Qualifier Round (4th place overall); competed as OSINT, Password Cracking, Forensics, Network Analysis, and Reverse Engineering expert</li>
+            <li>2nd place MS Team @ Space Grand Challenge</li>
         </ul>
     `;
 
     // Append markdown content to the achievements container
     achievementsContainer.appendChild(markdownContent);
-    
+
+    // Now, append the projects section
     var projectsContainer = document.createElement('div');
     projectsContainer.className = "projects-container";
     projectsContainer.innerHTML = "<h2>Projects</h2>";
@@ -224,6 +237,7 @@ permalink: /about/
         projectsContainer.appendChild(projectItem);
     }
 
+    container.appendChild(achievementsContainer);
     container.appendChild(projectsContainer);
 
     // Create footer section
