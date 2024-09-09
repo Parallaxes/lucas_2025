@@ -4,9 +4,10 @@ title: About Me
 permalink: /about/
 ---
 
+
 <style>
     body {
-        font-family: "Arial", sans-serif; /* Change font to Arial or any other preferred font */
+        font-family: sans-serif;
     }
     /* Container for Flexbox-based layout */
     .flex-container {
