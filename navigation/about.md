@@ -150,8 +150,14 @@ permalink: /about/
         {
             name: 'XALLARAP',
             url: 'https://github.com/Parallaxes/XALLARAP',
-            description: 'A hardening script for Linux distros, created for the CyberPatriot competition. Current functioning features include hash checking, user auditing, password auditing, logging, and kernel hardening.',
+            description: 'A hardening script for Linux distros, created for the CyberPatriot competition. Current functioning features include hash checking, user auditing, password auditing, logging, and kernel hardening. CLOSED SOURCE.',
             images: ['{{site.baseurl}}/images/about/xallarapTitle.png', '{{site.baseurl}}/images/about/xallarapUsers.png', '{{site.baseurl}}/images/about/xallarapHash.png']
+        },
+        {
+            name: 'Krayt',
+            url: 'https://github.com/Parallaxes/krayt',
+            description: 'Tool to convert YouTube videos to locally downloadable files. (Totally not just a wrapper of an already functioning library PyTube with a fancy CLI and PATH support)',
+            images: ['https://github.com/Parallaxes/krayt/raw/main/kraytDemo.gif']
         },
         {
             name: 'SPOJ Solutions',
@@ -251,4 +257,12 @@ permalink: /about/
     `;
 
     container.appendChild(footer);
+</script>
+
+<script src="https://utteranc.es/client.js"
+        repo="parallaxes/lucas_2025"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
 </script>

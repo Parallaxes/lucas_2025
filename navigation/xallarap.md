@@ -1,9 +1,10 @@
 ---
-layout: blogs 
-title: Blogs
-search_exclude: true
-permalink: /blogs/
+layout: page
+title: XALLARAP
+permalink: /xallarap/
 ---
+
+Test
 
 <script src="https://utteranc.es/client.js"
         repo="parallaxes/lucas_2025"
