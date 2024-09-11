@@ -222,3 +222,11 @@ hide: true
 Cat!
 
 ![cat](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+
+<script src="https://utteranc.es/client.js"
+        repo="parallaxes/lucas_2025"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>

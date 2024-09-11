@@ -5,6 +5,10 @@ permalink: /projects/
 ---
 
 <style>
+    body {
+        font-family: Arial, sans-serif !important;
+    }
+
     /* Container for Flexbox-based layout */
     .flex-container {
         display: flex;
