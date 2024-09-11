@@ -126,13 +126,13 @@ permalink: /projects/
             {
                 name: 'XALLARAP',
                 url: 'https://github.com/Parallaxes/XALLARAP',
-                description: 'A hardening script for Linux distros, created for the CyberPatriot competition...',
+                description: 'A hardening script for Linux distros, created for the CyberPatriot competition. Current features include user auditing, package auditing, kernel hardening, hash integrity checkers, and policy hardening for Ubuntu/Debian systems. CLOSED SOURCE.',
                 images: ['{{site.baseurl}}/images/about/xallarapTitle.png', '{{site.baseurl}}/images/about/xallarapUsers.png', '{{site.baseurl}}/images/about/xallarapHash.png']
             },
             {
                 name: 'Krayt',
                 url: 'https://github.com/Parallaxes/krayt',
-                description: 'Tool to convert YouTube videos to locally downloadable files...',
+                description: 'Tool to convert YouTube videos to locally downloadable files. (Totally not just a wrapper for a Python library that already automates everything) Planning to rewrite the program from scratch using Rust! This is my most developed project (besides some closed source ones for CyberPatriot).',
                 media: [
                     'https://github.com/Parallaxes/krayt/raw/main/media/kraytDemo.mp4'
                 ]
@@ -140,13 +140,13 @@ permalink: /projects/
             {
                 name: 'SPOJ Solutions',
                 url: 'https://github.com/Parallaxes/SPOJ',
-                description: 'A general collection of my Sphere Online Judge (SPOJ) solutions...',
+                description: 'A general collection of my Sphere Online Judge (SPOJ) solutions.',
                 images: ['https://miro.medium.com/v2/resize:fit:1400/0*XvhNyVt7B79rr81x.png', '{{site.baseurl}}/images/about/spojDemo1.png', '{{site.baseurl}}/images/about/spojDemo2.png']
             },
             {
                 name: 'CSSE Student Repo',
                 url: 'https://github.com/Parallaxes/lucas_2025',
-                description: 'Repository containing my student code portfolio...',
+                description: 'Repository containing my student code portfolio.',
                 images: ['https://avatars.githubusercontent.com/u/66652504?s=200&v=4']
             }
         ];
