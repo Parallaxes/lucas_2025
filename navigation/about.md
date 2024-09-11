@@ -36,45 +36,6 @@ permalink: /about/
         width: 100%;
         align-items: center;
     }
-    /* Flexbox container for projects section */
-    .projects-container {
-        display: flex;
-        flex-direction: column; /* Align items vertically */
-        width: 100%; /* Ensure the projects section spans the full width */
-        align-items: center; /* Center-align the project items */
-        margin-top: 20px;
-    }
-    .project-item {
-        width: 100%; /* Ensure project item spans the full width */
-        max-width: 875px; /* Set a max width to avoid items being too wide */
-        margin-bottom: 20px; /* Add some space between projects */
-        padding: 15px;
-        background-color: #333; /* Optional: Add a background color for clarity */
-        border-radius: 8px;
-        text-align: left; /* Align text to the left */
-        color: #fff; /* Set text color */
-    }
-    .project-item {
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
-        padding: 20px;
-        margin: 10px;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-    .project-item:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-    }
-    .project-item h3 {
-        margin-top: 0;
-        text-align: left;
-    }
-    .projects-container h2 {
-        text-align: left;
-        margin-left: 0;
-        width: 100%;
-    }
 
     .footer {
         text-align: center;
@@ -146,34 +107,6 @@ permalink: /about/
         "bio": "Hello! I'm Lucas, a freshman attending DNHS. You'll typically find me in cybersecurity (CyberPatriot) or CTF competitions, but in my free time I enjoy building personal projects with C++ and reverse engineering programs. I'm passionate about open source software and intelligence, and in that spirit, do all of my development through Linux.",
     };
 
-    var projects = [
-        {
-            name: 'XALLARAP',
-            url: 'https://github.com/Parallaxes/XALLARAP',
-            description: 'A hardening script for Linux distros, created for the CyberPatriot competition. Current functioning features include hash checking, user auditing, password auditing, logging, and kernel hardening. CLOSED SOURCE.',
-            images: ['{{site.baseurl}}/images/about/xallarapTitle.png', '{{site.baseurl}}/images/about/xallarapUsers.png', '{{site.baseurl}}/images/about/xallarapHash.png']
-        },
-        {
-            name: 'Krayt',
-            url: 'https://github.com/Parallaxes/krayt',
-            description: 'Tool to convert YouTube videos to locally downloadable files. (Totally not just a wrapper of an already functioning library PyTube with a fancy CLI and PATH support)',
-            images: ['https://github.com/Parallaxes/krayt/raw/main/kraytDemo.gif']
-        },
-        {
-            name: 'SPOJ Solutions',
-            url: 'https://github.com/Parallaxes/SPOJ',
-            description: 'A general collection of my Sphere Online Judge (SPOJ) solutions. WIP',
-            images: ['https://miro.medium.com/v2/resize:fit:1400/0*XvhNyVt7B79rr81x.png', '{{site.baseurl}}/images/about/spojDemo1.png', '{{site.baseurl}}/images/about/spojDemo2.png']
-        },
-        {
-            name: 'CSSE Student Repo',
-            url: 'https://github.com/Parallaxes/lucas_2025',
-            description: 'Repository containing my student code portfolio for the Computer Science & Software Engineering course 2024 - 2025.',
-            images: ['https://avatars.githubusercontent.com/u/66652504?s=200&v=4']
-        },
-        
-    ];
-
     function createFlexItem(location) {
         var flexItem = document.createElement("div");
         flexItem.className = "flex-item";
@@ -224,28 +157,7 @@ permalink: /about/
     // Append markdown content to the achievements container
     achievementsContainer.appendChild(markdownContent);
 
-    // Now, append the projects section
-    var projectsContainer = document.createElement('div');
-    projectsContainer.className = "projects-container";
-    projectsContainer.innerHTML = "<h2>Projects</h2>";
-
-    for (const project of projects) {
-        var projectItem = document.createElement('div');
-        projectItem.className = "project-item";
-        projectItem.innerHTML = `
-            <a href="${project.url}" target="_blank" style="text-decoration: none; color: inherit;">
-                <h3>${project.name}</h3>
-                <p>${project.description}</p>
-                <div class="image-gallery">
-                    ${project.images.map(image => `<img src="${image}" alt="${project.name}" class="gallery-image">`).join('')}
-                </div>
-            </a>
-        `;
-        projectsContainer.appendChild(projectItem);
-    }
-
     container.appendChild(achievementsContainer);
-    container.appendChild(projectsContainer);
 
     // Create footer section
     var footer = document.createElement('div');
