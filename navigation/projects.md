@@ -4,6 +4,8 @@ title: Projects
 permalink: /projects/
 ---
 
+{% include nav/home.html %}
+
 <style>
     body {
         font-family: Arial, sans-serif !important;

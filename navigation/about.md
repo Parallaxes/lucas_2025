@@ -4,6 +4,7 @@ title: About Me
 permalink: /about/
 ---
 
+{% include nav/home.html %}
 
 <style>
     body {

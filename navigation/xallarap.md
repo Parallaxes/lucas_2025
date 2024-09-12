@@ -1,7 +1,7 @@
 ---
 layout: page
-title: XALLARAP
-permalink: /xallarap/
+title: Krayt
+permalink: /krayt/
 ---
 
 Test
