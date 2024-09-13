@@ -150,6 +150,8 @@ comments: false
         let food = {x: 0, y: 0};
         let score;
         let wall;
+        let appleImage = new Image();
+        appleImage.src = 'path/to/apple.png'; // Replace with the path to your apple image
         /* Display Control */
         /////////////////////////////////////////////////////////////
         // 0 for the game
@@ -280,7 +282,7 @@ comments: false
                 activeDot(snake[i].x, snake[i].y);
             }
             // Paint food
-            activeDot(food.x, food.y);
+            ctx.drawImage(appleImage, food.x * BLOCK, food.y * BLOCK, BLOCK, BLOCK);
             // Debug
             //document.getElementById("debug").innerHTML = snake_dir + " " + snake_next_dir + " " + snake[0].x + " " + snake[0].y;
             // Recursive call after speed delay, déjà vu
@@ -313,24 +315,27 @@ comments: false
             // test key and switch direction
             switch(key) {
                 case 37:    // left arrow
+                case 65:    // 'A' key
                     if (snake_dir !== 1)    // not right
                         snake_next_dir = 3; // then switch left
                     break;
                 case 38:    // up arrow
+                case 87:    // 'W' key
                     if (snake_dir !== 2)    // not down
                         snake_next_dir = 0; // then switch up
                     break;
                 case 39:    // right arrow
+                case 68:    // 'D' key
                     if (snake_dir !== 3)    // not left
                         snake_next_dir = 1; // then switch right
                     break;
                 case 40:    // down arrow
+                case 83:    // 'S' key
                     if (snake_dir !== 0)    // not up
                         snake_next_dir = 2; // then switch down
                     break;
             }
-        }
-        /* Dot for Food or Snake part */
+        }    /* Dot for Food or Snake part */
         /////////////////////////////////////////////////////////////
         let activeDot = function(x, y){
             ctx.fillStyle = "#FFFFFF";
@@ -372,4 +377,11 @@ comments: false
             if(wall === 1){screen_snake.style.borderColor = "#FFFFFF";}
         }
     })();
+
+    document.addEventListener('keydown', function(event) {
+            if (event.key === 'ArrowUp' || event.key === 'ArrowDown' || event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+                event.preventDefault();
+            }
+        });
 </script>
+```

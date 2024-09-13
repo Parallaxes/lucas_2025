@@ -153,6 +153,19 @@ permalink: /about/
             <li>1st place MS Team @ SoCal Cyber Cup Qualifier Round (4th place overall); competed as OSINT, Password Cracking, Forensics, Network Analysis, and Reverse Engineering expert</li>
             <li>2nd place MS Team @ Space Grand Challenge</li>
         </ul>
+        <break>
+        <h2>My Experience</h2>
+        <ul>
+            <li><b>C++</b> - 5 years exp; Competed in a substantial number of Competitive Programming competitions using C++, including USACO (Bronze), CodeForces (rated 972), and Leetcode.</li>
+            <li><b>Assembly</b> - 3 years exp; Competed in multiple CTF competitions as a reverse engineer decompiling and analyzing ASM code.</li>
+            <li><b>C</b> - 3 years exp; Competed in multiple CTF competitions as a reverse engineer decompiling and analyzing C code.</li>
+            <li><b>Python</b> - 6 years exp; Developed large number of data projects and applications, including Krayt, a tool used to convert YouTube videos to locally downloaded files.</li>
+            <li><b>Bash & CMD</b> - 3 years exp; Competed in CyberPatriot to secure systems and mitigate incidents - developed system auditing scripts using Bash (Unix) and CMD (Windows).</li>
+            <li><b>Java</b> - 4 years exp; developed various programs using Java w/ OOP</li>
+            <li><b>JavaScript</b> - 4 years exp; developed JavaScript code during my time in CS classes.</li>
+            <li><b>Rust</b> - 0.1 years exp; Just started learning Rust!</li>
+            <li><b>Go, Perl, Ruby, & R</b> - 1 year exp; languages learned during competitions for reverse engineering!</li>
+        </ul>
     `;
 
     // Append markdown content to the achievements container
