@@ -138,7 +138,7 @@ permalink: /projects/
             {
                 name: 'Krayt',
                 url: 'https://github.com/Parallaxes/krayt',
-                description: 'Tool to convert YouTube videos to locally downloadable files. (Totally not just a wrapper for a Python library that already automates everything) Planning to rewrite the program from scratch using Rust! This is my most developed project (besides some closed source ones for CyberPatriot).',
+                description: 'Tool to convert YouTube videos to locally downloadable files. (Totally not just a wrapper for a Python library that already automates everything) Planning to rewrite the program from scratch using Rust! This is my most developed project (besides some closed source ones for CyberPatriot). Supports both Windows and Linux systems, but with some streaming issues due to video encoding -- a bug I still have yet to fix. You can, however, mitigate this by filtering streams for progressive tags (which unfortunately usually only allows 360p). Nonetheless, still a great tool with plenty of development to come!',
                 media: [
                     'https://github.com/Parallaxes/krayt/raw/main/media/kraytDemo.mp4'
                 ]
