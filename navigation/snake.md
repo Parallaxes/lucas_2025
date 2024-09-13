@@ -151,7 +151,9 @@ comments: false
         let score;
         let wall;
         let appleImage = new Image();
-        appleImage.src = 'path/to/apple.png'; // Replace with the path to your apple image
+        appleImage.src = '{{site.baseurl}}/images/apple.png'; // Replace with the path to your apple image
+        const appleWidth = 20; // Set the desired width
+        const appleHeight = 20; // Set the desired height
         /* Display Control */
         /////////////////////////////////////////////////////////////
         // 0 for the game
