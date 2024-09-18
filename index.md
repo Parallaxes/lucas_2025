@@ -191,11 +191,39 @@ hide: true
 </script>
 
 <!-- Description of the website -->
-## About this site
 
-Welcome to my portofolio!
+<div>
+  <h1>About this site</h1>
+  <p style="font-size: 1.25em;">Welcome to my portfolio!</p>
+</div>
 
-Hi, I'm Lucas, a Computer Science student @ DNHS '28! Read more about me in my [about page](/lucas_2025/about/).
+<div>
+  <p style="font-size: 1.25em;">
+    Hi, I'm Lucas, a Computer Science student @ DNHS '28! Read more about me in my <a href="/lucas_2025/about/">about page</a>.
+  </p>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 Cat!
 
