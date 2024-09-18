@@ -192,16 +192,14 @@ hide: true
 
 <!-- Description of the website -->
 
-<div>
-  <h1>About this site</h1>
-  <p style="font-size: 1.25em;">Welcome to my portfolio!</p>
-</div>
+## About this site
 
-<div>
-  <p style="font-size: 1.25em;">
-    Hi, I'm Lucas, a Computer Science student @ DNHS '28! Read more about me in my <a href="/lucas_2025/about/">about page</a>.
-  </p>
-</div>
+<p style="font-size: 1.5em;">Welcome to my portfolio!</p>
+
+<p style="font-size: 1.5em;">
+Hi, I'm Lucas, a Computer Science student @ DNHS '28! Read more about me in my <a href="/lucas_2025/about/">about page</a>.
+</p>
+
 
 <br>
 <br>
@@ -224,6 +222,23 @@ hide: true
 <br>
 <br>
 <br>
+
+## HTML Hacks!
+
+
+<div style="border: 4px solid blue; padding: 20px;">
+  <p style="border: 4px solid red; font-size: 1.5em; padding: 10px;">Warlock Class</p>
+  <button style="border: 4px solid green; font-size: 1.5em; padding: 10px;">Cast Nova Bomb</button>
+</div>
+
+<br>
+<br>
+
+<div style="border: 4px solid white; padding: 20px;">
+  <a style="border: 4px solid blue; font-size: 1.5em; padding: 10px; display: block; width: 25%" href="https://www.destinypedia.com/Hunter">Hunter Class</a>
+  <a style="border: 4px solid blue; font-size: 1.5em; padding: 10px; display: block; width: 25%" href="https://www.destinypedia.com/Titan_(class)">Titan Class</a>
+  <p style="border: 4px solid red; font-size: 1.5em; padding: 10px;">Behold, the other two classes!</p>
+</div>
 
 Cat!
 
