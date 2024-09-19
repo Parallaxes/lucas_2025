@@ -192,7 +192,7 @@ hide: true
 
 <!-- Description of the website -->
 
-## About this site
+# About this site
 
 <p style="font-size: 1.5em;">Welcome to my portfolio!</p>
 
@@ -200,6 +200,10 @@ hide: true
 Hi, I'm Lucas, a Computer Science student @ DNHS '28! Read more about me in my <a href="/lucas_2025/about/">about page</a>.
 </p>
 
+# What I'm currently working on
+
+### Building machine learning models with PyTorch!
+![PyTorch](https://miro.medium.com/v2/resize:fit:1200/1*aqNgmfyBIStLrf9k7d9cng.jpeg)
 
 <br>
 <br>
@@ -223,7 +227,7 @@ Hi, I'm Lucas, a Computer Science student @ DNHS '28! Read more about me in my <
 <br>
 <br>
 
-## HTML Hacks!
+# HTML Hacks!
 
 
 <div style="border: 4px solid blue; padding: 20px;">
@@ -240,9 +244,7 @@ Hi, I'm Lucas, a Computer Science student @ DNHS '28! Read more about me in my <
   <p style="border: 4px solid red; font-size: 1.5em; padding: 10px;">Behold, the other two classes!</p>
 </div>
 
-Cat!
 
-![cat](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
 
 <script src="https://utteranc.es/client.js"
         repo="parallaxes/lucas_2025"
