@@ -3,6 +3,9 @@ layout: page
 title: JS Typing Speed
 permalink: /type/
 ---
+
+{% include nav/home.html %}
+
 <style>
     #typing-app {
         font-family: Arial, sans-serif;
@@ -40,16 +43,33 @@ permalink: /type/
 
 <script>
     document.addEventListener("DOMContentLoaded", function() {
-        const promptText = document.getElementById("prompt-text").textContent;
+        const promptTextElement = document.getElementById("prompt-text");
         const userInput = document.getElementById("user-input");
         const startBtn = document.getElementById("start-btn");
         const wpmDisplay = document.getElementById("wpm");
         const accuracyDisplay = document.getElementById("accuracy");
         
         let startTime, endTime, timerRunning = false;
+        let promptText = promptTextElement.textContent;
+
+        const texts = [
+            "The quick brown fox jumps over the lazy dog.",
+            "A journey of a thousand miles begins with a single step.",
+            "To be or not to be, that is the question."
+        ];
+
+        function getRandomText() {
+            return texts[Math.floor(Math.random() * texts.length)];
+        }
+
+        function updatePromptText() {
+            promptText = getRandomText();
+            promptTextElement.textContent = promptText;
+        }
 
         startBtn.addEventListener("click", function() {
             if (!timerRunning) {
+                updatePromptText();
                 userInput.disabled = false;
                 userInput.value = '';
                 userInput.classList.remove("correct", "incorrect");
@@ -73,17 +93,27 @@ permalink: /type/
         userInput.addEventListener("input", function() {
             const inputText = userInput.value;
             let correctChars = 0;
+            let coloredText = '';
 
-            for (let i = 0; i < inputText.length; i++) {
-                if (inputText[i] === promptText[i]) {
-                    correctChars++;
+            for (let i = 0; i < promptText.length; i++) {
+                if (i < inputText.length) {
+                    if (inputText[i] === promptText[i]) {
+                        correctChars++;
+                        coloredText += `<span class="correct">${promptText[i]}</span>`;
+                    } else {
+                        coloredText += `<span class="incorrect">${promptText[i]}</span>`;
+                    }
+                } else {
+                    coloredText += promptText[i];
                 }
             }
+
+            promptTextElement.innerHTML = coloredText;
 
             const accuracy = Math.round((correctChars / promptText.length) * 100);
             accuracyDisplay.textContent = accuracy + "%";
 
-            if (inputText === promptText) {
+            if (inputText.length === promptText.length) {
                 endTime = new Date();
                 const timeDiff = (endTime - startTime) / 1000 / 60; // time difference in minutes
                 const wordCount = inputText.split(/\s+/).filter(word => word.length > 0).length;
@@ -107,3 +137,4 @@ permalink: /type/
   <p id="wpm-result">WPM: <span id="wpm">0</span></p>
   <p id="accuracy-result">Accuracy: <span id="accuracy">0%</span></p>
 </div>
+
