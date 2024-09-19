@@ -54,8 +54,8 @@ permalink: /type/
 
         const texts = [
             "The quick brown fox jumps over the lazy dog.",
-            "A journey of a thousand miles begins with a single step.",
-            "To be or not to be, that is the question."
+            "Give a man a gun and he can rob a bank, but give a man a bank, and he can rob the world... I like it for the same reason many people hate it, because to me it means that power belongs to the people that take it.",
+            "It's one thing to question your mind; it's another to question your eyes and ears. But then again, isn't it all the same, our senses just mediocre inputs for our brain? Sure, we rely on them, trust they accurately portray the real world around us, but what if the haunting truth is they can't?"
         ];
 
         function getRandomText() {

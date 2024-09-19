@@ -205,6 +205,12 @@ Hi, I'm Lucas, a Computer Science student @ DNHS '28! Read more about me in my <
 ### Building machine learning models with PyTorch!
 ![PyTorch](https://miro.medium.com/v2/resize:fit:1200/1*aqNgmfyBIStLrf9k7d9cng.jpeg)
 
+### Learning Rust!
+![Rust](https://miro.medium.com/v2/resize:fit:709/0*Eqqrv9zVpH99X726.png)
+
+### Developing scripts for CyberPatriot!
+![CyberPatriot](https://mma.prnewswire.com/media/1996884/CYBERPATRIOT_Education_Program_blue_Logo.jpg?p=facebook)
+
 <br>
 <br>
 <br>
