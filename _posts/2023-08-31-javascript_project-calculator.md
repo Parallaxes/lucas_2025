@@ -9,12 +9,7 @@ toc: true
 comments: false
 ---
 
-```scss
----
----
-
-@import "nighthawk/calculator-button";
-```
+<link rel="stylesheet" href="~/lucas_2025/_sass/nighthawk/_main.scss">
 
 <!-- 
 Hack 0: Right justify the result
