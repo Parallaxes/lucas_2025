@@ -145,11 +145,12 @@ class Player {
         // Update the angle based on mouse position
         this.angle = Math.atan2(dy, dx); // Calculate the angle towards the mouse
     
-        // Calculate the new position so that the tip of the spaceship is at the mouse position
-        const distanceFromTipToCenter = this.height / 2; // Adjust this value based on your spaceship's dimensions
-        this.position.x = mouseX - this.width / 2;
-        this.position.y = mouseY - distanceFromTipToCenter; // Align tip with the cursor
+        // Use linear interpolation to move the spaceship towards the mouse smoothly
+        const lerpFactor = 0.1; // Adjust this value to control the "trail" effect
+        this.position.x += dx * lerpFactor;
+        this.position.y += dy * lerpFactor;
     }
+    
     
     
     
