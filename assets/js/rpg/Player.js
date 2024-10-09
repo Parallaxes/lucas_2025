@@ -126,6 +126,9 @@ class Player {
         this.railgun.update(); // Update the railgun bullets
     }
     
+    getPosition() {
+        return {x: this.position.x, y: this.position.y};
+    }
 
     bindEventListeners() {
         addEventListener('mousemove', this.handleMouseMove.bind(this));
