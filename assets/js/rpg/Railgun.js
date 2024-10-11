@@ -72,3 +72,5 @@ class Railgun {
 }
 
 export default Railgun;
+
+// :3

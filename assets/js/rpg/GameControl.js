@@ -44,3 +44,5 @@ const GameControl = {
 window.addEventListener('resize', GameControl.resize.bind(GameControl));
 
 export default GameControl;
+
+// :3

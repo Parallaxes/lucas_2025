@@ -52,3 +52,5 @@ class Enemy {
 }
 
 export default Enemy;
+
+// :3
