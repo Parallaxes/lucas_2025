@@ -50,7 +50,7 @@ class GameEnv {
         this.setTop();
         this.setBottom();
         this.innerWidth = window.innerWidth;
-        this.innerHeight = window.innerHeight - this.top - this.bottom;
+        this.innerHeight = window.innerHeight - this.bottom;
         this.size();
     }
 
