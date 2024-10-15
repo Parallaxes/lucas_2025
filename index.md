@@ -72,6 +72,16 @@ This blog contains my journey into Coding.
             Data Types
         </div>
     </a>
+    <a href="{{site.baseurl}}/docs/rpg-game/" style="text-decoration: none;">
+        <div style="background-color: #FF0000; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+            RPG Game Docs
+        </div>
+    </a>
+    <a href="{{site.baseurl}}/game/intro/" style="text-decoration: none;">
+        <div style="background-color: #FF0000; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+            Game Docs
+        </div>
+    </a>
 </div>
 
 <br>
