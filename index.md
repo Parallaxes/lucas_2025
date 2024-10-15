@@ -84,6 +84,7 @@ This blog contains my journey into Coding.
     </a>
 </div>
 
+PLEASE DEPLOY CORRECTLY PLEASE PLEASE I BEG OF YOU
 <br>
 <br>
 <!-- Liquid:  statements -->
