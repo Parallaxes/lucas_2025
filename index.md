@@ -87,6 +87,8 @@ This blog contains my journey into Coding.
 PLEASE DEPLOY CORRECTLY PLEASE PLEASE I BEG OF YOU
 
 Ok now work
+
+Work now?
 <br>
 <br>
 <!-- Liquid:  statements -->
