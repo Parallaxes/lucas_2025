@@ -34,23 +34,23 @@ This blog contains my journey into Coding.
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
     <a href="{{site.baseurl}}/javascript/project/snake" style="text-decoration: none;">
-        <div style="background-color: #00FF00; color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+        <div style="background-color: #FF0000; color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
             Snake Game
         </div>
     </a>
     <a href="{{site.baseurl}}/type" style="text-decoration: none;">
-        <div style="background-color: #FF0000; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+        <div style="background-color: #FF8800; color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
             Typing Game
-        </div>
-    </a>
-    <a href="{{site.baseurl}}/rpg" style="text-decoration: none;">
-        <div style="background-color: #FF8800; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
-            Quantum Coast v0.0
         </div>
     </a>
     <a href="{{site.baseurl}}/rpg2" style="text-decoration: none;">
         <div style="background-color: #FFFF00; color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
-            Quantum Coast v0.1
+            Quantum Coast v0.0
+        </div>
+    </a>
+    <a href="{{site.baseurl}}/rpg" style="text-decoration: none;">
+        <div style="background-color: #00FF00; color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+          Quantum Coast v0.1
         </div>
     </a>
 </div>
@@ -62,14 +62,24 @@ This blog contains my journey into Coding.
 > Here is my preparation for college topics, click to review my blogs
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+    <a href="{{site.baseurl}}/csse/javascript/fundamentals/data-types/" style="text-decoration: none;">
+        <div style="background-color: #FF0000; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+            JSON Objects & Arrays
+        </div>
+    </a>
     <a href="{{site.baseurl}}/csse/javascript/fundamentals/variables" style="text-decoration: none;">
-        <div style="background-color: #000000; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+        <div style="background-color: #FF0000; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
             Variables I/O
         </div>
     </a>
     <a href="{{site.baseurl}}/csse/javascript/fundamentals/data-types/" style="text-decoration: none;">
         <div style="background-color: #FF0000; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
             Data Types
+        </div>
+    </a>
+    <a href="{{site.baseurl}}/csse/javascript/fundamentals/for-loops/" style="text-decoration: none;">
+        <div style="background-color: #FF0000; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+            For Loops
         </div>
     </a>
     <a href="{{site.baseurl}}/docs/rpg-game/" style="text-decoration: none;">
@@ -83,6 +93,11 @@ This blog contains my journey into Coding.
         </div>
     </a>
 </div>
+<br>
+<br>
+
+![Yeah](https://media1.tenor.com/m/qSzPR6-d7dUAAAAC/furry-boykisser.gif)
+
 
 PLEASE DEPLOY CORRECTLY PLEASE PLEASE I BEG OF YOU
 
