@@ -7,7 +7,7 @@ permalink: /rpg2x/
 <canvas id='gameCanvas'></canvas>
 
 <script type="module">
-    import GameControl from '{{site.baseurl}}/assets/js/rpg2x/GameControl.js';
+    import GameControl from '{{site.baseurl}}/assets/js/quantum/rpg2x/GameControl.js';
 
     // Background data
     const image_src = "{{site.baseurl}}/images/rpg/bg.jpg";
