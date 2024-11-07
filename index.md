@@ -5,6 +5,8 @@ description: Home Page
 image: /images/mario_animation.png
 hide: true
 ---
+<!-- Include submenu from _includes to top of pages -->
+{% include nav/home.html %}
 
 ## Home
 
@@ -43,7 +45,7 @@ This blog contains my journey into Coding.
             Typing Game
         </div>
     </a>
-    <a href="{{site.baseurl}}/rpg2" style="text-decoration: none;">
+    <a href="{{site.baseurl}}/rpg/latest" style="text-decoration: none;">
         <div style="background-color: #FFFF00; color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
             Quantum Coast v0.0
         </div>
@@ -108,8 +110,7 @@ Work now?
 <br>
 <!-- Liquid:  statements -->
 
-<!-- Include submenu from _includes to top of pages -->
-{% include nav/home.html %}
+
 <!--- Concatenation of site URL to frontmatter image  --->
 {% assign sprite_file = site.baseurl | append: page.image %}
 <!--- Has is a list variable containing mario metadata for sprite --->
