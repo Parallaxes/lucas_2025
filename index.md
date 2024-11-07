@@ -99,11 +99,6 @@ This blog contains my journey into Coding.
             JS Classes Intro
         </div>
     </a>
-    <a href="{{site.baseurl}}/csse/javascript/fundamentals/classes/intro/" style="text-decoration: none;">
-        <div style="background-color: #FF0000; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
-            JS Classes Intro
-        </div>
-    </a>
     <a href="{{site.baseurl}}/csse/javascript/fundamentals/classes/methods/" style="text-decoration: none;">
         <div style="background-color: #FF0000; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
             JS Methods
@@ -121,7 +116,7 @@ This blog contains my journey into Coding.
     </a>
     <a href="{{site.baseurl}}/csse/javascript/fundamentals/conditionals/hacks/" style="text-decoration: none;">
         <div style="background-color: #FF0000; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
-            JS Classes & Methods
+            JS Conditionals
         </div>
     </a>
     <a href="{{site.baseurl}}/csse/javascript/fundamentals/math-expressions/problems/" style="text-decoration: none;">
