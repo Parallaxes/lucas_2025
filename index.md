@@ -114,22 +114,22 @@ This blog contains my journey into Coding.
             JS Classes & Methods
         </div>
     </a>
-    <a href="{{site.baseurl}}/csse/javascript/fundamentals/conditionals/hacks/" style="text-decoration: none;">
+    <a href="{{site.baseurl}}/csse/javascript/fundamentals/conditionals/hacks" style="text-decoration: none;">
         <div style="background-color: #FF0000; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
             JS Conditionals
         </div>
     </a>
-    <a href="{{site.baseurl}}/csse/javascript/fundamentals/math-expressions/problems/" style="text-decoration: none;">
+    <a href="{{site.baseurl}}/csse/javascript/fundamentals/math-expressions/problems" style="text-decoration: none;">
         <div style="background-color: #FF0000; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
             JS Math
         </div>
     </a>
-    <a href="{{site.baseurl}}/csse/javascript/fundamentals/nested-conditionals/hw/" style="text-decoration: none;">
+    <a href="{{site.baseurl}}/csse/javascript/fundamentals/nested-conditionals/hw" style="text-decoration: none;">
         <div style="background-color: #FF0000; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
             JS Nested Conditionals
         </div>
     </a>
-    <a href="{{site.baseurl}}/csse/javascript/fundamentals/variables/hw/" style="text-decoration: none;">
+    <a href="{{site.baseurl}}/csse/javascript/fundamentals/variables/hw" style="text-decoration: none;">
         <div style="background-color: #FF0000; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
             JS Variables
         </div>
