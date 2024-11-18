@@ -134,6 +134,31 @@ This blog contains my journey into Coding.
             JS Variables
         </div>
     </a> 
+    <a href="{{site.baseurl}}/csse/lessons/strings/2024-10-30-strings-lesson-4-2.ipynb/" style="text-decoration: none;">
+        <div style="background-color: #FF0000; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+            JS Strings
+        </div>
+    </a> 
+    <a href="{{site.baseurl}}/csse/javascript/fundamentals/iteration/hw" style="text-decoration: none;">
+        <div style="background-color: #FF0000; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+            JS Iteration
+        </div>
+    </a> 
+    <a href="{{site.baseurl}}/csse/javascript/fundamentals/data-abstraction-hacks" style="text-decoration: none;">
+        <div style="background-color: #FF0000; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+            JS Abstraction
+        </div>
+    </a> 
+    <a href="{{site.baseurl}}/csse/Lessons/Booleans/p2" style="text-decoration: none;">
+        <div style="background-color: #FF0000; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+            JS Booleans
+        </div>
+    </a> 
+    <a href="{{site.baseurl}}/csse/javascript/fundamentals/arrays/hw" style="text-decoration: none;">
+        <div style="background-color: #FF0000; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+            JS Arrays
+        </div>
+    </a>     
 </div>
 <br>
 <br>
