@@ -259,3 +259,6 @@ In the front matter, you can also define things like a title and description for
 - The type value will tell us which column this is going to appear under the time box supported pages.  The "ccc" stands for Code, Code, Code.
 
 - The courses will tell us which menu item it will be under, in this case, the `csa` menu, and the `week` tells it what row (week) it will appear under that menu.
+
+
+![image](https://github.com/user-attachments/assets/7187fdaa-3571-4916-84ce-f9ee36195209)
