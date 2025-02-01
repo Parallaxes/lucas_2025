@@ -147,11 +147,15 @@ permalink: /about/
     markdownContent.innerHTML = `
         <h2>My Achievements</h2>
         <ul>
-            <li>4th place @ CyberPatriot XVI Semifinals</li>
-            <li>3rd place @ CyberPatriot XVI State Round</li>
-            <li>1st place MS Team @ SoCal Cyber Cup Final Round (3rd plaec overall competing against colleges)</li>
+            <li>5th place Linux, 10th place Overall @ CyberPatriot XVII Semifinals Open (Qualified for Nationals)</li>
+            <li>1st place Linux, 22nd place Overall @ CyberPatriot XVII State Round Open</li>
+            <li>1st place Linux, 95th place Overall @ CyberPatriot XVII Qual Round Open</li>
+            <li>4th place @ CyberPatriot XVI Semifinals MS</li>
+            <li>3rd place @ CyberPatriot XVI State Round MS</li>
+            <li>1st place MS Team @ SoCal Cyber Cup Final Round (3rd place overall competing against colleges)</li>
             <li>1st place MS Team @ SoCal Cyber Cup Qualifier Round (4th place overall); competed as OSINT, Password Cracking, Forensics, Network Analysis, and Reverse Engineering expert</li>
             <li>2nd place MS Team @ Space Grand Challenge</li>
+            <li>Top 3% Beat Saber player</li>
         </ul>
         <break>
         <h2>My Experience</h2>
