@@ -11,7 +11,14 @@ minima:
   social_links:
     - { platform: github, user_url: "https://github.com/nighthawkcoders"}
     - { platform: x, user_url: "https://x.com/NighthawkCoding/" }
-    - { platform: youtube, user_url: "https://www.youtube.com/@nighthawkcodingsociety2868" } 
+    - { platform: youtube, user_url: "https://www.youtube.com/@nighthawkcodingsociety2868" }
+  nav_pages:
+    - navigation/blog.md
+    - navigation/rpg.md
+    - navigation/rpg2.md
+    - navigation/search.md
+    - navigation/about.md
+    - README4YML.md
 # remote_theme: pages-themes/midnight@v0.2.0
 # remote_theme: pages-themes/cayman@v0.2.0
 # remote_theme: pages-themes/hacker@v0.2.0
@@ -21,10 +28,3 @@ minima:
 # remote_theme: pages-themes/time-machine@v0.2.0
 plugins:
   - jekyll-remote-theme
-header_pages:
-  - navigation/blog.md
-  - navigation/rpg.md
-  - navigation/rpg2.md
-  - navigation/search.md
-  - navigation/about.md
-  - README4YML.md
